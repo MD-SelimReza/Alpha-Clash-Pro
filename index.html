@@ -30,47 +30,88 @@
         </div>
       </section>
       <!-- play ground field -->
-      <section class="play-ground">
-        <!-- screen -->
-        <!-- keyboard start -->
-        <div class="flex justify-center gap-1 my-1 w-full">
-          <kbd class="kbd">q</kbd>
-          <kbd class="kbd">w</kbd>
-          <kbd class="kbd">e</kbd>
-          <kbd class="kbd">r</kbd>
-          <kbd class="kbd">t</kbd>
-          <kbd class="kbd">y</kbd>
-          <kbd class="kbd">u</kbd>
-          <kbd class="kbd">i</kbd>
-          <kbd class="kbd">o</kbd>
-          <kbd class="kbd">p</kbd>
+      <section class="play-ground hidden">
+        <div class="flex flex-col items-center gap-6 pt-8">
+          <!-- screen -->
+          <div
+            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]"
+          >
+            <div class="flex justify-center">
+              <p class="bg-[#2F2941] text-white p-4 rounded-b-xl">
+                Don't watch keyboard while playing...
+              </p>
+            </div>
+            <div class="flex justify-center items-center h-full">
+              <p class="text-[#010313] text-8xl font-bold">Y</p>
+            </div>
+          </div>
+          <!-- keyboard start -->
+          <div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">q</kbd>
+              <kbd class="kbd">w</kbd>
+              <kbd class="kbd">e</kbd>
+              <kbd class="kbd">r</kbd>
+              <kbd class="kbd">t</kbd>
+              <kbd class="kbd">y</kbd>
+              <kbd class="kbd">u</kbd>
+              <kbd class="kbd">i</kbd>
+              <kbd class="kbd">o</kbd>
+              <kbd class="kbd">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">a</kbd>
+              <kbd class="kbd">s</kbd>
+              <kbd class="kbd">d</kbd>
+              <kbd class="kbd">f</kbd>
+              <kbd class="kbd">g</kbd>
+              <kbd class="kbd">h</kbd>
+              <kbd class="kbd">j</kbd>
+              <kbd class="kbd">k</kbd>
+              <kbd class="kbd">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">z</kbd>
+              <kbd class="kbd">x</kbd>
+              <kbd class="kbd">c</kbd>
+              <kbd class="kbd">v</kbd>
+              <kbd class="kbd">b</kbd>
+              <kbd class="kbd">n</kbd>
+              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <!-- keyboard end -->
+          <!-- life line -->
+          <div class="flex justify-between w-[90%]">
+            <button
+              class="btn rounded-full px-5 bg-[#894189] border-none text-white"
+            >
+              <span>Life</span>
+              <img src="images/heart.svg" alt="" />
+              <span>1</span>
+            </button>
+            <button
+              class="btn rounded-full px-5 bg-[#360490] border-none text-white"
+            >
+              <span>Score</span>
+              <img src="images/doller.svg" alt="" />
+              <span>1</span>
+            </button>
+          </div>
         </div>
-        <div class="flex justify-center gap-1 my-1 w-full">
-          <kbd class="kbd">a</kbd>
-          <kbd class="kbd">s</kbd>
-          <kbd class="kbd">d</kbd>
-          <kbd class="kbd">f</kbd>
-          <kbd class="kbd">g</kbd>
-          <kbd class="kbd">h</kbd>
-          <kbd class="kbd">j</kbd>
-          <kbd class="kbd">k</kbd>
-          <kbd class="kbd">l</kbd>
-        </div>
-        <div class="flex justify-center gap-1 my-1 w-full">
-          <kbd class="kbd">z</kbd>
-          <kbd class="kbd">x</kbd>
-          <kbd class="kbd">c</kbd>
-          <kbd class="kbd">v</kbd>
-          <kbd class="kbd">b</kbd>
-          <kbd class="kbd">n</kbd>
-          <kbd class="kbd">m</kbd>
-          <kbd class="kbd">/</kbd>
-        </div>
-        <!-- keyboard end -->
-        <!-- life line -->
       </section>
       <!-- score screen -->
-      <section class="score"></section>
+      <section class="score flex justify-center items-center min-h-screen">
+        <div class="text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+          <h1 class="text-7xl text-white">
+            <span class="font-bold">Score</span>
+            <span class="">: 14</span>
+          </h1>
+          <button class="btn btn-white px-5 text-lg">Play Again</button>
+          <p class="text-white text-lg">Practice will make you Pro</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
